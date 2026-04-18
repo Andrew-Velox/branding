@@ -1,35 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-scale=1.0">
-<title>Animated Logo</title>
+<svg width="1181" height="277" viewBox="0 0 1181 277" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    background: #080b10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-
-  .scene {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
 
   .glow-ring {
-    position: absolute;
-    width: 520px;
-    height: 180px;
-    border-radius: 50%;
-    background: radial-gradient(ellipse, rgba(74,222,128,0.07) 0%, transparent 70%);
     filter: blur(20px);
+    transform-box: fill-box;
+    transform-origin: center;
     animation: breathe 3s ease-in-out infinite;
   }
   @keyframes breathe {
@@ -127,12 +102,9 @@
     100% { opacity: 0; transform: translateX(320px) skewX(-18deg); }
   }
 </style>
-</head>
-<body>
-<div class="scene">
-  <div class="glow-ring"></div>
 
-  <svg width="1181" height="277" viewBox="0 0 1181 277" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ellipse class="glow-ring" cx="1014" cy="138.5" rx="260" ry="90" fill="rgba(74,222,128,0.14)"/>
+
     <path d="M0 0H1181V210C1181 247.003 1151 277 1114 277H0V0Z" fill="#0C1117"/>
 
     <g id="ziex-text">
@@ -227,7 +199,4 @@
         <path d="M951.804 198.08 H1080.55 V178.248 L1061.53 159.096 V178.248 H972.129 Z"/>
       </clipPath>
     </defs>
-  </svg>
-</div>
-</body>
-</html>
+</svg>
