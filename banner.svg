@@ -103,7 +103,7 @@
   }
 </style>
 
-  <ellipse class="glow-ring" cx="1014" cy="138.5" rx="260" ry="90" fill="rgba(74,222,128,0.14)"/>
+  <ellipse class="glow-ring" cx="1014" cy="138.5" rx="260" ry="90" fill="#4ADE80" fill-opacity="0.14"/>
 
     <path d="M0 0H1181V210C1181 247.003 1151 277 1114 277H0V0Z" fill="#0C1117"/>
 
